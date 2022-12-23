@@ -56,4 +56,4 @@ print(total_each_supplier)
 print(product_with_less_than_10)
 print(company_with_its_value)
 my_ws.cell(1, 5).value = "value of Inventory"
-my_wb.save(filename="inventory.xlsx")
+my_wb.save("new_inventory.xlsx")
