@@ -1,10 +1,13 @@
-# coding on __getattr__ , __setatttr__ , __delattr__
+from graphviz import Digraph
 
-class TestAttr:
-    def __init__(self):
-        print("__init__")
-        self.country = {"name": "india", "capital": "Delhi", "states": 30}
+dot = Digraph()
+dot.attr(rankdir='LR', size='8,5')
 
+dot.node('A', 'Start')
+dot.node('B', 'Process 1')
+dot.node('C', 'Process 2')
+dot.node('D', 'End')
 
-t = TestAttr()
-print(t.country)
+dot.edges(['AB', 'BC', 'CD'])
+
+dot.render('flowchart', view=True)
