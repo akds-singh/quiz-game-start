@@ -1,0 +1,10 @@
+digraph {
+	rankdir=LR size="8,5"
+	A [label=Start]
+	B [label="Process 1"]
+	C [label="Process 2"]
+	D [label=End]
+	A -> B
+	B -> C
+	C -> D
+}
